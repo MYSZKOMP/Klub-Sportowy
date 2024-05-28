@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Fikcyjna strona klubu sportowego</title>
+ <link rel="stylesheet" href="styl.css">
+</head>
+<div class="nagłówek">
+<h1>Klub sportowy Orły<h1>
+</div>
+<div class="centrum">
+<ul>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Menu</a>
+        <div class="dropdown-content">
+            <a href="strona główna.html">Strona główna</a>
+            <a href="oferta.html">Oferta</a>
+            <a href="Kontakt.html">Kontakt</a>
+        </div>
+    </li>
+</ul>
+
+<h1>Witamy w Klubie Sportowym Orły</h1>
+<h3>Najlepsze miejsce do uprawiania sportu w Twoim mieście!</h3>
+<p>Klub Sportowy Orły Nowego Miasta to miejsce, gdzie pasja spotyka profesjonalizm. 
+Naszym celem jest nie tylko wygrywanie, ale także kształtowanie charakteru, budowanie 
+zespołowego ducha i promowanie zdrowego stylu życia. Działamy z myślą o wszystkich 
+miłośnikach sportu, niezależnie od wieku i poziomu zaawansowania.
+Prowadzone przez doświadczonych trenerów, posiadających licencje międzynarodowych federacji sportowych.
+Nowoczesne obiekty sportowe, wyposażone w najwyższej jakości sprzęt.
+Programy rozwoju umiejętności sportowych oraz szkolenia z zakresu taktyki, strategii i psychologii sportu.
+Profesjonalna opieka fizjoterapeutów i lekarzy sportowych, dbających o Twoje zdrowie i kondycję.
+</p>
+
+<div class="zdjecia">
+  <center><img class="mySlides" src="zdjecie.jpg" width=300px; height=200px></center>
+  <center><img class="mySlides" src="zdjecie1.jpg" width=300px; height=200px></center>
+  <center><img class="mySlides" src="zdjecie2.jpg" width=300px; height=200px></center>
+  <center><img class="mySlides" src="zdjecie3.jpg" width=300px; height=200px></center>
+
+  <center><button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button></center>
+  <center><button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button></center>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</div>
+<div class="stopka">
+<p> Fikcyjny Klub Sportowy</p>
+</div>
+<body>
+</body>
+
+</html>
